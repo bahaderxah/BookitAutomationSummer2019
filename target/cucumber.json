@@ -1,1 +1,121 @@
-[]
+[
+  {
+    "line": 2,
+    "elements": [
+      {
+        "start_timestamp": "2020-03-16T14:30:38.465Z",
+        "line": 4,
+        "name": "1. Verify that amount of rooms is equals to 18",
+        "description": "",
+        "id": "rooms;1.-verify-that-amount-of-rooms-is-equals-to-18",
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 1235316,
+              "status": "skipped"
+            },
+            "line": 5,
+            "name": "authorization token is provided for \"teacher\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"teacher\"",
+                  "offset": 36
+                }
+              ],
+              "location": "APIStepDefinitions.authorization_token_is_provided_for(String)"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 51881,
+              "status": "skipped"
+            },
+            "line": 6,
+            "name": "user accepts content type as \"application/json\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"application/json\"",
+                  "offset": 29
+                }
+              ],
+              "location": "APIStepDefinitions.user_accepts_content_type_as(String)"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 38524,
+              "status": "skipped"
+            },
+            "line": 7,
+            "name": "user sends GET request to \"/api/rooms\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"/api/rooms\"",
+                  "offset": 26
+                }
+              ],
+              "location": "APIStepDefinitions.user_sends_GET_request_to(String)"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "status": "undefined"
+            },
+            "line": 8,
+            "name": "user should be able to see 18 rooms",
+            "match": {},
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "status": "undefined"
+            },
+            "line": 9,
+            "name": "user verifies that response status code is 200",
+            "match": {},
+            "keyword": "And "
+          }
+        ],
+        "tags": [
+          {
+            "name": "@api"
+          },
+          {
+            "name": "@rooms"
+          }
+        ]
+      }
+    ],
+    "name": "Rooms",
+    "description": "",
+    "id": "rooms",
+    "keyword": "Feature",
+    "uri": "file:src/test/resources/features/api/GetRooms.feature",
+    "tags": [
+      {
+        "name": "@api",
+        "type": "Tag",
+        "location": {
+          "line": 1,
+          "column": 1
+        }
+      },
+      {
+        "name": "@rooms",
+        "type": "Tag",
+        "location": {
+          "line": 1,
+          "column": 6
+        }
+      }
+    ]
+  }
+]

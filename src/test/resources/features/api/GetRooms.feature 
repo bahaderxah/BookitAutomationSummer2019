@@ -1,5 +1,4 @@
-
-@api
+@api @rooms
 Feature: Rooms
 
   Scenario: 1. Verify that amount of rooms is equals to 18
